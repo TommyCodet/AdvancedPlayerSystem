@@ -1,0 +1,55 @@
+# AdvancedPlayerSystem Messages Configuration
+
+# Profile Command Messages
+profile:
+  header: "&e========== &f{player}'s Profile &e=========="
+  first-join: "&eFirst Join: &f{date}"
+  last-login: "&eLastLogin: &f{date}"
+  playtime: "&ePlaytime: &f{time}"
+  kills: "&eKills: &f{kills}"
+  deaths: "&eDeaths: &f{deaths}"
+  balance: "&eBalance: &f{balance} {currency}"
+  footer: "&e================================"
+  profile-not-found: "&cPlayer &f{player} &cnot found!"
+  no-permission: "&cYou don't have permission to view this profile!"
+
+# Balance Command Messages
+balance:
+  your-balance: "&eYour Balance: &f{balance} {currency}"
+  player-balance: "&e{player}'s Balance: &f{balance} {currency}"
+  player-not-found: "&cPlayer &f{player} &cnot found!"
+
+# Pay Command Messages
+pay:
+  insufficient-funds: "&cYou don't have enough {currency}! You need &f{needed} &cbut only have &f{balance}"
+  max-balance-exceeded: "&c{player} &chas reached the maximum balance!"
+  invalid-amount: "&cInvalid amount! Must be greater than 0"
+  payment-sent: "&aYou sent &f{amount} {currency} &ato &f{player}"
+  payment-received: "&aYou received &f{amount} {currency} &afrom &f{player}"
+  player-not-found: "&cPlayer &f{player} &cnot found!"
+  cannot-pay-yourself: "&cYou can't pay yourself!"
+  min-transaction-error: "&cMinimum transaction amount is &f{min} {currency}"
+
+# Admin Command Messages
+admin:
+  reload-success: "&aConfiguration reloaded successfully!"
+  reload-error: "&cError while reloading configuration: &f{error}"
+  help-header: "&e========== &fAdvancedPlayerSystem Help &e=========="
+  help-profile: "&e/profile [player] &f- Shows a player's profile"
+  help-balance: "&e/balance [player] &f- Shows a player's balance"
+  help-pay: "&e/pay <player> <amount> &f- Transfer money to a player"
+  help-reload: "&e/aps reload &f- Reload the configuration"
+  help-help: "&e/aps help &f- Shows this help message"
+  help-footer: "&e================================"
+
+# General Messages
+general:
+  player-offline: "&cPlayer &f{player} &cis offline!"
+  data-saved: "&aPlayer data saved: &f{player}"
+  error-occurred: "&cAn error occurred: &f{error}"
+  not-a-number: "&cInvalid number: &f{input}"
+
+# Join/Leave Messages (can be overridden in config.yml)
+events:
+  join: "&a✓ &e{player} &ahas joined the server"
+  leave: "&c✗ &e{player} &chas left the server"

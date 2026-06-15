@@ -1,0 +1,56 @@
+name: AdvancedPlayerSystem
+version: 1.0.0
+description: A professional player management and economy system
+author: TommyCodet
+main: de.tommycodet.aps.AdvancedPlayerSystem
+
+api-version: 1.21
+
+commands:
+  profile:
+    description: Shows your player profile or another player's profile
+    usage: /profile [player]
+    permission: advancedplayersystem.profile
+    aliases: [prof, p]
+
+  balance:
+    description: Shows your balance or another player's balance
+    usage: /balance [player]
+    permission: advancedplayersystem.balance
+    aliases: [bal, money]
+
+  pay:
+    description: Transfer money to another player
+    usage: /pay <player> <amount>
+    permission: advancedplayersystem.pay
+
+  aps:
+    description: Main command for AdvancedPlayerSystem administration
+    usage: /aps <help|reload>
+    permission: advancedplayersystem.admin
+    aliases: [apsystem]
+
+permissions:
+  advancedplayersystem.*:
+    description: Grants all permissions for AdvancedPlayerSystem
+    children:
+      advancedplayersystem.profile: true
+      advancedplayersystem.balance: true
+      advancedplayersystem.pay: true
+      advancedplayersystem.admin: true
+
+  advancedplayersystem.profile:
+    description: Permission to use /profile command
+    default: true
+
+  advancedplayersystem.balance:
+    description: Permission to use /balance command
+    default: true
+
+  advancedplayersystem.pay:
+    description: Permission to use /pay command
+    default: true
+
+  advancedplayersystem.admin:
+    description: Permission to use admin commands (/aps reload, /aps help)
+    default: op

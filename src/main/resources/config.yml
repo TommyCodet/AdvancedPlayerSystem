@@ -1,0 +1,56 @@
+# AdvancedPlayerSystem Configuration
+
+# Economy Settings
+economy:
+  # Starting balance for new players
+  starting-balance: 1000.0
+  
+  # Maximum balance a player can have
+  max-balance: 1000000.0
+  
+  # Minimum transaction amount
+  min-transaction: 0.01
+  
+  # Currency name for messages
+  currency-name: "Coins"
+  
+  # Currency symbol
+  currency-symbol: "💰"
+
+# Join/Leave Settings
+messages:
+  # Join message (use {player} for player name, {time} for playtime)
+  join-message: "&a✓ &e{player} &ahas joined the server"
+  
+  # Leave message
+  leave-message: "&c✗ &e{player} &chas left the server"
+  
+  # Enable join/leave messages
+  enabled: true
+
+# GUI Settings
+gui:
+  # Title of the profile GUI
+  profile-title: "&e{player}'s Profile"
+  
+  # Title of the balance display
+  balance-title: "&eBalance: &f{balance}"
+
+# Plugin Settings
+plugin:
+  # Prefix for all plugin messages
+  prefix: "&8[&eAPS&8] &r"
+  
+  # Check player data every X ticks (20 ticks = 1 second)
+  save-interval: 1200
+  
+  # Enable automatic data saving
+  auto-save: true
+
+# Logging
+logging:
+  # Enable detailed logging
+  debug: false
+  
+  # Log player transactions
+  log-transactions: true
